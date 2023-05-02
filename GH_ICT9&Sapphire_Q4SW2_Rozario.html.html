@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>Seatwork 2</title>
+<body>
+<h2>Time converter for seconds</h2>
+<p>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDyovKbqAPsYsofrqOVUaixLoHAZdukkTV-A&usqp=CAU">
+<label>To Minutes</label>
+  <input id="input Minutes" type="number" placeholder="Seconds" oninput="Secondstominutes(this.value)" onchange="Secondstominutes(this.value)">
+</p>
+<p>seconds: <span id="output seconds"></span></p>
+
+<script>
+function Hourstoseconds(valNum) {
+  document.getElementById("output seconds").innerHTML=valNum360;
+}
+</script>
+<p>
+  <label>To Hours</label>
+  <input id="input Hours" type="number" placeholder="Hours" oninput="Secondstohours(this.value)" onchange="Secondstohours(this.value)">
+</p>
+<p>Hours:<span id="output Minutes"></span></p>
+
+<script>
+function Hourstominutes(valNum) {
+  document.getElementById("output Minutes").innerHTML=valNum60;
+}
+</script>
+<p>
+  <label>To days</label>
+  <input id="input Hours" type="number" placeholder="days" oninput="Hourstodays(this.value)" onchange="Hourstodays(this.value)">
+</p>
+<p>days: <span id="output days"></span></p>
+
+<script>
+function Hourstodays(valNum) {
+  document.getElementById("output days").innerHTML=valNum/24;
+}
+</script>
+
+</body>
+</html>
+</table>
